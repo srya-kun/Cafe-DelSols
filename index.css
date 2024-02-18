@@ -1,0 +1,257 @@
+*{
+    padding: 0;
+    margin: 0;
+        /* flex-grow: -1;
+    flex-shrink: -1;*/
+}
+
+body{
+    width: 100vw;
+    height: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav{
+    width: 100vw;
+    max-height: 10rem;
+    min-height: 5rem;
+    background-color: #F7A428;
+    flex-grow: -1;
+    flex-shrink: 0;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    background-image: url(/img/logo.png);
+    background-position: center;
+    background-size: contain;
+}
+
+.content{
+    width: 100vw;
+    height: 200vh;
+    background-color: rgb(228, 243, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-evenly ; */
+
+}
+
+body::-webkit-scrollbar{
+    /* visibility: hidden
+    ; */
+    display: none;
+}
+
+#content-tab{
+    width: 90vw;
+    height: 56.25vh;
+    margin-top: 1rem; 
+    margin-bottom: 1rem; 
+    border-radius: 15px;
+    flex-grow: 1;
+    flex-shrink: -1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.menu-content{
+    background-image: url(/img/homepage/menu.jpg);
+    background-size:cover;
+    background-position:center ;
+}
+
+.gallery-content{
+    background-image: url(/img/homepage/gallery.jpg);
+    background-size:cover;
+    background-position:center ;
+}
+
+.awards-content{
+    background-image: url(/img/homepage/awards.jpg);
+    background-size:cover;
+    background-position:center ;
+}
+
+/* .menu-content:hover{
+    background-image: linear-gradient(to bottom,rgba(0, 0, 0, 0.5),rgba(0,0,0,0.1)),url(/img/homepage/menu.jpg);
+    box-shadow: 10px 7px 6px #000000;
+
+}
+.gallery-content:hover{
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.1)),url(/img/homepage/gallery.jpg);
+    box-shadow: 10px 7px 10px #000000;
+
+}
+.awards-content:hover{
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.1)),url(/img/homepage/awards.jpg);
+    box-shadow: 10px 7px 6px #000000;
+
+} */
+
+.menu-content:hover{
+    
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.1)),url(/img/homepage/menu.jpg);
+    box-shadow: 10px 7px 6px #000;
+
+}
+.gallery-content:hover{
+    
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.1)),url(/img/homepage/gallery.jpg);
+    box-shadow: 10px 7px 10px #000;
+
+}
+.awards-content:hover{
+    
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.1)),url(/img/homepage/awards.jpg);
+    box-shadow: 10px 7px 6px #000;
+
+}
+
+.tab-name{
+    font-family:"Trirong",sans-serif ;
+    color: rgb(255, 252, 248);
+    font-size: 3vh;
+    text-shadow: 5px 0px 3px   #000;
+    text-decoration:underline 0.7vh #fff;
+    position: absolute;
+    margin-top: 3rem;
+}
+
+
+#content-tab:hover .tab-name{
+    display: none;
+}
+
+.text{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+    visibility: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+#content-tab:hover .text{
+    visibility: visible;
+}
+
+.text .one{
+    /* position: absolute; */
+    /* top: 1.99rem; */
+    margin-top: 1%;
+}
+
+
+.text .one h1{
+    font-family:"Trirong",sans-serif ;
+    color: rgb(255, 252, 248);
+    font-size: 7vh;
+    text-shadow: 5px 0px 3px   #000;
+    text-decoration:underline 0.7vh #fff;
+    
+}
+
+.menu-content:hover .text .one h1{
+    
+    text-shadow: 5px 0px 3px   #b9b9b9;
+    text-decoration:underline 0.7vh #f7a428d3;
+
+}
+.gallery-content:hover .text .one h1{
+    
+    text-shadow: 5px 0px 3px   #000;
+    text-decoration:underline 0.7vh #f7a428d3;
+
+}
+.awards-content:hover .text .one h1{
+    
+    text-shadow: 5px 0px 3px   #000;
+    text-decoration:underline 0.7vh #f7a428d3;
+
+}
+
+.text .two p{
+
+    font-family: "Dancing Script",Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size:3.7vh;
+    text-align: center;
+    text-shadow: 5px 0px 3px   #000;
+    
+
+
+}
+
+
+
+button{
+    width:170px;
+    padding: 10px;
+    text-align: center;
+    margin: 20px;
+    border-radius: 50px;
+    font-weight: bolder;
+    border: 3px solid #F7A428 ;
+    background: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    /* bottom: -14rem; */
+    visibility: hidden;
+}
+
+.btn p{
+    font-family: "Sofia",sans-serif ;
+    font-size: 2.7vh;
+
+}
+
+span{
+    background: #F7A428;
+    border-radius: 25px;
+    width: 100%;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.5s;
+
+}
+
+button:hover span{
+    height:  100%;
+}
+
+button:hover{
+    text-transform: capitalize;
+    border: none;
+    color: #fff;
+}
+
+#content-tab:hover button{
+    
+    visibility: visible;
+
+}

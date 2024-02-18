@@ -1,0 +1,215 @@
+*{
+    padding: 0;
+    margin: 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+
+
+}
+
+body{
+    width: 100vw;
+    height: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.nav{
+    width: 100vw;
+    max-height: 10rem;
+    min-height: 5rem;
+    
+    background-color: #F7A428;
+    
+    flex-grow: -1;
+    flex-shrink: 0;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    background-image: url(/img/logo.png);
+    background-position: center;
+    background-size: contain;
+}
+
+
+body::-webkit-scrollbar{
+    /* visibility: hidden
+    ; */
+    display: none;
+}
+.mininav{
+    width: 100%;
+    height: 4.2vh;
+    background-color: #ebebebf1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    border: 0.1em solid #000;  
+    border-top: none;
+    border-bottom-left-radius: 0.8em;
+    border-bottom-right-radius: 0.8em;
+}
+
+.con{
+    width: 10em;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly ;
+    align-items: center; 
+    margin-left: 1em; 
+}
+
+.con a{
+    text-decoration:none;
+    color: #000;
+    font-size:1.1em ;
+} 
+
+.con a:hover{
+
+    text-decoration:3px solid underline;
+    text-decoration-color:#F7A428 ;
+}
+
+
+.content{
+    width: 100%;
+    /* height:150vh; */
+    height: 250vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#bar{
+    width: 95%;
+    /* height: 30vh; */
+    height: 50vh;
+    background-color: #e9e9e9;
+    border: 0.3vh solid #ababab;
+    border-radius: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow-x: hidden;
+}
+
+.card-container{
+
+    width: 100%;
+    height: 40vh;
+    /* background-color: transparent; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top:  0.3vh solid #ababab;
+    margin-top: 10px;
+}
+
+.name{
+    font-family:'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    font-size: 3vh;
+    color: #F7A428;
+}
+
+
+
+.cards{
+    width: 13vw;
+    height: 13vw;
+    background-color: white;
+    border:  0.2vw solid #000;
+
+    border-radius: 4vw;
+    background-position:center;
+    background-size: cover;
+    flex-grow: 0;
+    flex-shrink: 3;
+    
+}
+
+.cards:hover{
+    width: 18vw;
+    height: 18vw;
+    transition: all 80ms ease-in;
+    margin-top: 1vh;
+    box-shadow: 3vh 2vh 5vh  #000000d7;
+    /* border: 1px solid #abababd7; */
+    border-left: none;
+    border-top: none;
+}
+
+
+.coffee-bar .card-container a:nth-child(1) .cards{
+
+    background-image: url(/img/menupage/normal/coffee/DoubleLayerdCoffeeShot.jpg);
+
+}
+
+.coffee-bar .card-container a:nth-child(2) .cards{
+    background-image: url(/img/menupage/normal/coffee/DrizzlingChocalate.jpg);
+}
+
+.coffee-bar .card-container a:nth-child(3) .cards{
+    background-image: url(/img/menupage/normal/coffee/SunriseLatte.jpg);
+}
+
+.coffee-bar .card-container a:nth-child(4) .cards{
+    background-image: url(/img/menupage/normal/coffee/ValentainLatte.jpg);
+}
+
+.crunchies-bar .card-container a:nth-child(1) .cards{
+    background-image: url(/img/menupage/normal/crunchies/CinnamonRoll.jpg);
+}
+
+.crunchies-bar .card-container a:nth-child(2) .cards{
+    background-image: url(/img/menupage/normal/crunchies/Crossiant.jpg);
+}
+
+.crunchies-bar .card-container a:nth-child(3) .cards{
+    background-image: url(/img/menupage/normal/crunchies/macron.jpg);
+    background-position: left;
+}
+
+.crunchies-bar .card-container a:nth-child(4) .cards{
+    background-image: url(/img/menupage/normal/crunchies/PainAuChocolat.jpg);
+}
+
+.drinks-bar .card-container a:nth-child(1) .cards{
+    background-image: url(/img/menupage/normal/drinks/ArtisanalSoda.jpg);
+}
+
+.drinks-bar .card-container a:nth-child(2) .cards{
+    background-image: url(/img/menupage/normal/drinks/CraftGingerBeer.jpg);
+}
+
+.drinks-bar .card-container a:nth-child(3) .cards{
+    background-image: url(/img/menupage/normal/drinks/FlavoredSparklingWater.jpg);
+}
+
+.drinks-bar .card-container a:nth-child(4) .cards{
+    background-image: url(/img/menupage/normal/drinks/ItalianSoda.jpg);
+}
+
+.icecoffee-bar .card-container a:nth-child(1) .cards{
+    background-image: url(/img/menupage/normal/icecoffee/ColdBrew.jpg);
+}
+
+.icecoffee-bar .card-container a:nth-child(2) .cards{
+    background-image: url(/img/menupage/normal/icecoffee/IcedLatte.jpg);
+}
+
+.icecoffee-bar .card-container a:nth-child(3) .cards{
+    background-image: url(/img/menupage/normal/icecoffee/NitroColdBrew.jpg);
+}
+.icecoffee-bar .card-container a:nth-child(4) .cards{
+    background-image: url(/img/menupage/normal/icecoffee/VietnameseIcedCoffee.jpg);
+}
